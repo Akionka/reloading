@@ -235,7 +235,7 @@ function main()
 end
 
 function update()
-	local fpath = os.getenv('TEMP') .. '\\pame-version.json'
+	local fpath = os.getenv('TEMP') .. '\\reloading-version.json'
 	downloadUrlToFile('https://raw.githubusercontent.com/Akionka/reloading/master/version.json', fpath, function(id, status, p1, p2)
 		if status == dlstatus.STATUS_ENDDOWNLOADDATA then
 			local f = io.open(fpath, 'r')
