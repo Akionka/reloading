@@ -1,7 +1,7 @@
 script_name('Reloading')
 script_author('akionka')
-script_version('1.0')
-script_version_number(1)
+script_version('1.1')
+script_version_number(2)
 
 local sampev = require('lib.samp.events')
 local encoding = require('encoding')
@@ -156,6 +156,7 @@ end
 function main()
   if not isSampfuncsLoaded() or not isSampLoaded() then return end
   while not isSampAvailable() do wait(0) end
+	sampAddChatMessage(u8:decode("[Reloading]: Скрипт {00FF00}успешно{FFFFFF} загружен. Версия: {2980b9}"..thisScript().version.."{FFFFFF}."), -1)
 	update()
 	while updateinprogess ~= false do wait(0) end
 	sampRegisterChatCommand("pt", function(params)
