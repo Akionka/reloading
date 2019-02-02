@@ -1,7 +1,7 @@
 script_name('Reloading')
 script_author('akionka')
-script_version('1.1')
-script_version_number(2)
+script_version('1.2')
+script_version_number(3)
 
 local sampev = require('lib.samp.events')
 local encoding = require('encoding')
@@ -38,7 +38,7 @@ local id = weapons
 weapons.names = {
 	[id.COLT45] = 'Glock 18',
 	[id.SILENCED] = 'Glock 18 c глушителем',
-	[id.DESERTEAGLE] = 'Desert eagle',
+	[id.DESERTEAGLE] = 'Desert Eagle',
 	[id.SHOTGUN] = 'Дробовик',
 	[id.SAWNOFFSHOTGUN] = 'Обрез',
 	[id.UZI] = 'Micro Uzi',
